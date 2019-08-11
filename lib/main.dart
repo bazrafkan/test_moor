@@ -49,10 +49,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() async {
     AppDatabase db = AppDatabase();
-//    final ss = Todo(title: 'test1');
-//    db.insertTodo(ss);
-//    final ss2 = Todo(title: 'test2');
-//    db.insertTodo(ss2);
+    final ss = Todo(title: 'test1');
+    db.insertTodo(ss);
+    final ss2 = Todo(title: 'test2');
+    db.insertTodo(ss2);
     var aaa = await db.getAllTodo();
     for (var item in aaa) {
       print(item.title);
